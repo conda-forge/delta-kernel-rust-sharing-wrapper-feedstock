@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.3.1"
+  version: "0.3.3"
   maturin_min: "1.0"
   maturin_max: "2.0"
   python_check_max: "3.14"
@@ -13,7 +13,7 @@ package:
 
 source:
   - url: https://pypi.org/packages/source/d/delta-kernel-rust-sharing-wrapper/delta_kernel_rust_sharing_wrapper-${{ version }}.tar.gz
-    sha256: d7cc3160f9d58de4419b27339bcc9bf8ef84f1a91383aa66322b6f20f3f1ca9f
+    sha256: 1ce82f9d18c66faaacca7f7a9a77b5210255a4d5bc6d61b8410f6bd5a9f37623
   - url: https://raw.githubusercontent.com/delta-io/delta-sharing/refs/heads/main/LICENSE.txt
     sha256: 5a2ae634be68464e407b80dbece9d8d822926c9b2cbdb1e801f5d27929589802
 
