@@ -30,7 +30,6 @@ build:
       CARGO: ${{ cargo_wrapper }}
       PYTHONIOENCODING: utf-8
       PYTHONLEGACYTEXTENCODING: utf-8
-      OPENSSL_DIR: ${{ "$PREFIX" if unix else "%LIBRARY_PREFIX%" }}
     content:
       - if: win
         then:
@@ -55,7 +54,6 @@ requirements:
         - perl
   host:
     - maturin >=${{ maturin_min }},<${{ maturin_max }}
-    - openssl
     - pip
     - python
     - if: is_abi3
