@@ -16,8 +16,6 @@ is_abi3:
 - false
 is_python_min:
 - false
-openssl:
-- '3.5'
 pin_run_as_build:
   python:
     min_pin: x.x
