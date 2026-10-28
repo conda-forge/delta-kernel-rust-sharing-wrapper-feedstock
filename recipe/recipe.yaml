@@ -2,7 +2,7 @@
 schema_version: 1
 
 context:
-  version: "0.3.3"
+  version: "0.3.4"
   maturin_min: "1.0"
   maturin_max: "2.0"
   cargo_wrapper: cargo-auditable-wrapper${{ ".sh" if unix else ".bat" }}
@@ -14,12 +14,12 @@ package:
 
 source:
   - url: https://files.pythonhosted.org/packages/source/d/delta-kernel-rust-sharing-wrapper/delta_kernel_rust_sharing_wrapper-${{ version }}.tar.gz
-    sha256: 1ce82f9d18c66faaacca7f7a9a77b5210255a4d5bc6d61b8410f6bd5a9f37623
+    sha256: 6e13bdf8f8c311821637eef9dc9b79dae5e0208fea27b53cd959b01b09b000b4
   - url: https://raw.githubusercontent.com/delta-io/delta-sharing/refs/heads/main/LICENSE.txt
     sha256: 5a2ae634be68464e407b80dbece9d8d822926c9b2cbdb1e801f5d27929589802
 
 build:
-  number: 1
+  number: 0
   skip: is_abi3 and not is_python_min
   python:
     version_independent: ${{ is_abi3 }}
